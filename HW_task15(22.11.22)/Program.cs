@@ -15,5 +15,5 @@ if (number > 7 || number < 1 )
 Console.WriteLine("такого дня недели не существует");
 else{
 bool result = DayOfWeek (number);
-Console.WriteLine($"выходной? --> {result}");
+Console.WriteLine(result ? "Да, выходной" : "Нет, не выходной");
 }
