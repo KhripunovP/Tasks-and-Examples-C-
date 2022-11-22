@@ -12,7 +12,11 @@ int SecondDigit (int num)
 
 Console.WriteLine("введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
+int check = number / 100;
 
+if (check > 10 || check < 1 )
+Console.WriteLine("число не трехзначное");
+else{
 int digit2 = SecondDigit (number);
-
 Console.WriteLine($"вторая цифра числа --> {digit2}");
+}
