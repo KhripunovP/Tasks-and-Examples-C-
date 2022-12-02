@@ -37,7 +37,7 @@ int EvensOfArray(int[] array)
     return evens;
 }
 
-Console.WriteLine("Введите количество трехзначных чисел, минимально и максимально возможные трехзначные числа");
+Console.WriteLine("Введите количество положительных трехзначных чисел, минимально и максимально возможные трехзначные числа");
 int n = Convert.ToInt32(Console.ReadLine());
 int min = Convert.ToInt32(Console.ReadLine());
 int max = Convert.ToInt32(Console.ReadLine());
