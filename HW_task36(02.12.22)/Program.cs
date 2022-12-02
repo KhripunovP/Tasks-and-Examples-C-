@@ -31,7 +31,7 @@ int OddsOfArray(int[] array)
     int sum = 0;
 for (int i = 0; i < array.Length; i++)
     {
-        if (((i+1) % 2) != 0)
+        if ((i % 2) != 0)
         {
             sum = sum + array[i];
         }
@@ -48,5 +48,5 @@ int[] arr = CreateArrayRndInt(n, min, max);
 PrintArray(arr);
 int result = OddsOfArray(arr);
 
-Console.WriteLine($"Сумма нечетных чисел массива = {result}");
+Console.WriteLine($"Сумма чисел, стоящих на нечетных позициях массива = {result}");
 
