@@ -14,9 +14,8 @@ int[] Numbers(string[] numbersStr)
 
 int PositiveNumbers(int[] array)
 {
-    int i = 0;
     int pos = 0;
-    for (i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > 0)
             pos = pos + 1;
