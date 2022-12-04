@@ -12,22 +12,22 @@ int[] Numbers(string[] numbersStr)
     return numbersInt;
 }
 
-int MaxNumber(int[] array)
+int PositiveNumbers(int[] array)
 {
     int i = 0;
-    int max = array[i];
-    for (i = 1; i < array.Length; i++)
+    int pos = 0;
+    for (i = 0; i < array.Length; i++)
     {
-        if (array[i] > max)
-            max = array[i];
+        if (array[i] > 0)
+            pos = pos + 1;
     }
-    return max;
+    return pos;
 }
 
 Console.WriteLine("Веедите числа через запятую");
 string[] str = Console.ReadLine().Split(',');
 
 int[] num = Numbers(str);
-int result = MaxNumber(num);
+int result = PositiveNumbers(num);
 
-Console.WriteLine($"Максимальное число из введенных = {result}");
+Console.WriteLine($"Чисел больше 0 -> {result}");
