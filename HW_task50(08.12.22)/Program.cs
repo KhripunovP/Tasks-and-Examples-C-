@@ -41,7 +41,7 @@ else
 {Console.Write("Такого элемента в массиве нет");}
 }
 
-Console.WriteLine("Введите количество строк, столбцов, минимально и максимально возможные трехзначные числа");
+Console.WriteLine("Введите количество строк, столбцов, минимально и максимально возможные числа");
 int r = Convert.ToInt32(Console.ReadLine());
 int c = Convert.ToInt32(Console.ReadLine());
 int min1 = Convert.ToInt32(Console.ReadLine());
