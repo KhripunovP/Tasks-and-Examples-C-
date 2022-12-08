@@ -18,7 +18,6 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
     }
     return matrix;
 }
-
 void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -46,7 +45,6 @@ int r = Convert.ToInt32(Console.ReadLine());
 int c = Convert.ToInt32(Console.ReadLine());
 int min1 = Convert.ToInt32(Console.ReadLine());
 int max1 = Convert.ToInt32(Console.ReadLine());
-
 int[,] array2D = CreateMatrixRndInt(r, c, min1, max1);
 PrintMatrix(array2D);
 
