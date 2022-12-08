@@ -49,4 +49,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 double[] arr = CreateArrayRndDouble(n, min, max);
 PrintArray(arr);
 double result = Math.Round(DifferenceMaxAndMin(arr), 1);
-Console.WriteLine($"Разница между максимальым и минимальным числами = {result}");
+Console.WriteLine($"Разница между максимальным и минимальным числами = {result}");
